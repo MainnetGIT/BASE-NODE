@@ -1,0 +1,28 @@
+{
+  "name": "base-node-tests",
+  "version": "1.0.0",
+  "description": "Comprehensive health and slot tests for BASE Network node",
+  "main": "base_node_tests.js",
+  "scripts": {
+    "test": "node base_node_tests.js",
+    "start": "node base_node_tests.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "ws": "^8.14.0",
+    "ethers": "^6.8.0"
+  },
+  "keywords": [
+    "base",
+    "ethereum",
+    "blockchain",
+    "node",
+    "health",
+    "testing"
+  ],
+  "author": "Dean",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 

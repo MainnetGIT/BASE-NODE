@@ -1,0 +1,85 @@
+{
+  "server": {
+    "ip": "185.191.117.142",
+    "user": "deanbot",
+    "password": "x37xJnS51EQboG3",
+    "port": 22,
+    "ssh_command": "ssh deanbot@185.191.117.142",
+    "has_sudo": true,
+    "notes": "New server configuration - created Jan 2025"
+  },
+  "base_node": {
+    "rpc_endpoint": "http://localhost:8545",
+    "websocket_endpoint": "ws://localhost:8546",
+    "metrics_endpoint": "http://localhost:7300",
+    "chain_id": 8453,
+    "network": "BASE Mainnet",
+    "status": "FULLY_OPERATIONAL",
+    "last_tested": "2025-08-04T07:38:00Z",
+    "defi_monitoring_capabilities": {
+      "token_tracking": "✅ Full ERC-20 token monitoring",
+      "new_token_detection": "✅ Contract deployment detection",
+      "dex_monitoring": "✅ Uniswap V3, DEX aggregators",
+      "liquidity_events": "✅ Pool creation, LP add/remove",
+      "swap_tracking": "✅ Real-time DEX swaps",
+      "arbitrage_detection": "✅ Cross-DEX price monitoring",
+      "active_protocols": ["Uniswap V3", "DEX Aggregators", "Major Tokens"],
+      "monitored_tokens": {
+        "USDC": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "WETH": "0x4200000000000000000000000000000000000006",
+        "cbBTC": "0x827922686190790b37229fd06084350e74485b72",
+        "BALD": "0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42",
+        "DAI": "0x50c5725949a6f0c72e6c4a641f24049a917db0cb"
+      },
+      "event_types_captured": [
+        "Transfer (0xddf252ad1be2c89b...)",
+        "Swap (0x19b47279256b2a23...)",
+        "PoolCreated (0x783cca1c0412dd0d...)",
+        "IncreaseLiquidity (0x70935338e69775456...)",
+        "DecreaseLiquidity (0x0c396cd989a39f4459...)",
+        "Mint/Burn (0x3067048beee31b25b...)"
+      ]
+    }
+  },
+  "test_results": {
+    "health_status": {
+      "chain_id": "✅ PASSED (0x2105 - BASE Mainnet)",
+      "network_version": "✅ PASSED (8453)",
+      "peer_count": "✅ PASSED (99 peers)",
+      "sync_status": "✅ PASSED (fully synced)"
+    },
+    "block_status": {
+      "latest_block": "✅ PASSED (Block #33,751,726)",
+      "block_details": "✅ PASSED (full data retrieved)",
+      "previous_block": "✅ PASSED (Block #33,751,725)",
+      "block_range": "✅ PASSED (3/3 blocks)"
+    },
+    "performance": {
+      "rpc_response_time": "5-7ms (excellent)",
+      "rapid_fire_test": "✅ 5/5 requests successful",
+      "average_response_time": "5ms",
+      "metrics_accessible": "✅ 1,426 metrics available",
+      "total_test_time": "28ms for 5 requests"
+    },
+    "summary": "All tests passed. Node is healthy, fully synced, and performing excellently."
+  },
+  "deployment_info": {
+    "created": "2025-01-29",
+    "purpose": "Server access configuration with BASE node testing",
+    "security_note": "Keep this file secure and exclude from git",
+    "test_files": [
+      "base_node_test.sh",
+      "base_node_tests.js",
+      "base_defi_monitor.sh",
+      "universal_pool_monitor.sh",
+      "pool_creation_decoder.sh",
+      "pool_watcher_trader.js",
+      "simple_pool_watcher.js",
+      "package.json"
+    ],
+    "documentation": [
+      "BASE_DEFI_MONITORING_CAPABILITIES.md",
+      "UNIVERSAL_POOL_DETECTION_EXPLAINED.md"
+    ]
+  }
+} 
